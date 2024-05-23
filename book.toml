@@ -1,0 +1,15 @@
+[book]
+authors = ["Matt Kline", "Ching-Chun (Jim) Huang"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Concurrency Primer"
+
+[output.html]
+smart-punctuation = true
+mathjax-support = true
+git-repository-url = "https://github.com/sysprog21/concurrency-primer"
+edit-url-template = "https://github.com/sysprog21/concurrency-primer/issues/new?title={path}"
+
+# [preprocessor.inline-highlighting]
+#default-language = "none"
