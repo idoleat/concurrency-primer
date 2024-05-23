@@ -55,14 +55,14 @@ Modern <small>CPU</small>s operate in a fashion far more complex than what tradi
 like those depicted in \fig{pipeline}<!--FIXME-->, suggest.
 They are equipped with multiple data paths tailored for various instruction types and schedulers that reorder and direct instructions through these paths.
 
-![A traditional five-stage <small>CPU</small> pipeline with fetch, decode, execute, memory access, and write-back stages. Modern designs are much more complicated, often reordering instructions on the fly.](images/pipeline.svg)
+{{#include images/pipeline.svg}}
 *<figcaption>A traditional five-stage <small>CPU</small> pipeline with fetch, decode, execute, memory access, and write-back stages. Modern designs are much more complicated, often reordering instructions on the fly.</figcaption>*
 
 It is quite common to form oversimplified views about memory operations.
 Picturing a multi-core processor setup might lead us to envision a model similar to \fig{ideal-machine}, <!--FIXME-->
 wherein each core alternately accesses and manipulates the system's memory.
 
-![An idealized multi-core processor where cores take turns accessing a single shared set of memory.](images/ideal-machine.svg)
+{{#include images/ideal-machine.svg}}
 *<figcaption>An idealized multi-core processor where cores take turns accessing a single shared set of memory.</figcaption>*
 
 The reality is far from straightforward.
@@ -75,8 +75,8 @@ Ensuring this memory system remains *coherent*,
 thus allowing writes made by one core to be observable by others even when utilizing different caches,
 presents a significant challenge.
 
-![A common memory hierarchy for modern multi-core processors](images/mp-cache.svg)
-*<figcaption>A common memory hierarchy for modern multi-core processors</figcaption>*
+{{#include images/mp-cache.svg}}
+*<figcaption>A common memory hierarchy for modern multi-core processors.</figcaption>*
 
 The myriad complexities within multithreaded programs on multi-core <small>CPU</small>s lead to a lack of a uniform concept of "now".
 Establishing some semblance of order among threads requires a concerted effort involving the hardware,
