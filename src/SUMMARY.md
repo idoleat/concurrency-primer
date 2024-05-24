@@ -12,3 +12,5 @@
   - [Compare and swap](./read-modify-write/compare_and_swap.md)
 - [Atomic operations as building blocks](./atomic_operation_as_building_blocks.md)
 - [Sequential consistency on weakly-ordered hardware](./seq_cst_on_weakly_rodered_hw.md)
+- [Implementing atomic read-modify-write operations with LL/SC instructions](./rmw_with_ll-sc.md)
+  - [Spurious LL/SC failures](./spurious_ll-sc_failures.md)
