@@ -46,6 +46,14 @@ jobs:
       - name: Change pdf named
         run: |
           mv book/pdf/output.pdf ./concurrency-primer.pdf
+      - name: Delete old release
+        uses: cb80/delrel@latest
+        with:
+          tag: mdbook-pdf
+      - name: Tag
+        run: |
+          git tag mdbook-pdf
+          git push -f --tags
       - name: Create and Upload Release
         id: release
         uses: softprops/action-gh-release@v2
@@ -54,6 +62,6 @@ jobs:
         with:
           files: |
             ./concurrency-primer.pdf
-          tag_name: ${{ github.ref_name }}
+          tag_name: "mdbook-pdf"
           body: |
-            Changes in this Release
+            This is an experimetal pdf build. Any style, arrangement and styling may change.
