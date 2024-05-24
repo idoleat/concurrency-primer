@@ -4,7 +4,7 @@
 by Fedor Pikus,
 a hour-long talk on this topic.
 
-[C++ atomic<> Weapons: The C++11 Memory Model and Modern Hardware](https://channel9.msdn.com/Shows/Going+Deep/Cpp-and-Beyond-2012-Herb-Sutter-atomic-Weapons-1-of-2)
+[C++ atomic<> Weapons: The C++11 Memory Model and Modern Hardware](https://herbsutter.com/2013/02/11/atomic-weapons-the-c-memory-model-and-modern-hardware/)
 by Herb Sutter,
 a three-hour talk that provides a deeper dive.
 Also the source of figures \ref{ideal-machine} and \ref{dunnington}.<!--FIXME-->

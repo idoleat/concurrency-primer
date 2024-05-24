@@ -64,4 +64,4 @@ jobs:
             ./concurrency-primer.pdf
           tag_name: "mdbook-pdf"
           body: |
-            This is an experimetal pdf build. Any style, arrangement and styling may change.
+            This is an experimetal pdf build. Any style, arrangement and content may change.
