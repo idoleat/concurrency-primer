@@ -28,9 +28,9 @@ jobs:
       - name: Install latest mdbook-pdf
         run: |
           tag=$(curl 'https://api.github.com/repos/HollowMan6/mdbook-pdf/releases/latest' | jq -r '.tag_name')
-          url="https://github.com/rust-lang/mdbook/releases/download/${tag}/mdbook-pdf-${tag}-x86_64-unknown-linux-gnu.tar.gz"
+          url="https://github.com/HollowMan6/mdbook-pdf/releases/download/${tag}/mdbook-pdf-${tag}-x86_64-unknown-linux-gnu.tar.gz"
           mkdir mdbook-pdf
-          curl -sSL $url | tar -xz --directory=./mdbook
+          curl -sSL $url | tar -xz --directory=./mdbook-pdf
           echo `pwd`/mdbook-pdf >> $GITHUB_PATH
       - name: Build Book
         run: |
