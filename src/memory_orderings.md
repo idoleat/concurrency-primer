@@ -13,10 +13,7 @@ A comprehensive list, as well as the corresponding enumerations used by the C an
 - Consume (`memory_order_consume`)
 
 To pick an ordering,
-you provide it as an optional argument that we have slyly failed to mention so far:\footnote{%
-In C, separate functions are defined for cases where specifying an ordering is necessary.
-`exchange()` becomes `exchange_explicit()`, a <small>CAS</small>
-becomes `compare_exchange_strong_explicit()`, and so on.}
+you provide it as an optional argument that we have slyly failed to mention so far:[^a]
 ```cpp
 void lock()
 {
@@ -44,3 +41,7 @@ while (!foo.compare_exchange_weak(
 With the syntax out of the way,
 let's look at what these orderings are and how we can use them.
 As it turns out, almost all of the examples we have seen so far do not actually need sequentially consistent operations.
+
+[^a]: In C, separate functions are defined for cases where specifying an ordering is necessary.
+`exchange()` becomes `exchange_explicit()`, a <small>CAS</small>
+becomes `compare_exchange_strong_explicit()`, and so on.

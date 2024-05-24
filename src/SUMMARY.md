@@ -17,3 +17,8 @@
 - [Do we always need sequentially consistent operations?](./do_we_always_need_seq-cst.md)
 - [Memory orderings](./memory_orderings.md)
   - [Acquire and release](./memory_ordering/acq_and_rel.md)
+  - [Relaxed](./memory_ordering/relaxed.md)
+  - [Acquire-Release](./memory_ordering/acq_rel.md)
+  - [Consume](./memory_ordering/consume.md)
+  - [H<small>C</small> S<small>VNT</small> D<small>RACONES</small>](./memory_ordering/hc_svnt_dracones.md)
+- [Hardware convergence](./hardware_convergence.md)

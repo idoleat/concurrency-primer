@@ -3,7 +3,7 @@
 We have just examined the acquire and release operations in the context of the lock example from \secref{lock-example}.<!--FIXME-->
 You can think of them as "one-way" barriers: an acquire operation permits other reads and writes to move past it,
 but only in a \\(before\to after\\) direction.
-A release works the opposite manner, allowing actions to move in an after→before direction.
+A release works the opposite manner, allowing actions to move in an \\(after\to before\\) direction.
 On <small>Arm</small> and other weakly-ordered architectures, this enables us to eliminate one of the memory barriers in each operation,
 such that
 
