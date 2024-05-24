@@ -25,22 +25,11 @@ jobs:
           mkdir mdbook
           curl -sSL $url | tar -xz --directory=./mdbook
           echo `pwd`/mdbook >> $GITHUB_PATH
-      - name: Install latest mdbook-pdf
-        run: |
-          tag=$(curl 'https://api.github.com/repos/HollowMan6/mdbook-pdf/releases/latest' | jq -r '.tag_name')
-          url="https://github.com/HollowMan6/mdbook-pdf/releases/download/${tag}/mdbook-pdf-${tag}-x86_64-unknown-linux-gnu"
-          mkdir mdbook-pdf
-          curl --output-dir "mdbook-pdf" --output mdbook-pdf -sSL $url
-          chmod +x ./mdbook-pdf/*
-          echo `pwd`/mdbook-pdf >> $GITHUB_PATH
       - name: Build Book
         run: |
           # This assumes your book is in the root of your repository.
           # Just add a `cd` here if you need to change to another directory.
           mdbook build
-      - name: Change pdf named
-        run: |
-          mv book/pdf/output.pdf ./concurrency-primer.pdf
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
@@ -51,14 +40,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: Create and Upload Release
-        id: release
-        uses: softprops/action-gh-release@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          files: |
-            ./concurrency-primer.pdf
-          tag_name: ${{ github.ref_name }}
-          body: |
-            Changes in this Release

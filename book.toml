@@ -17,15 +17,15 @@ additional-css = ["src/styles/horizontal_container.css"]
 [output.html.print]
 page-break = false # insert page-break after each chapter
 
-[output.pdf]
-display-header-footer = false
-scale = 0.8
-paper-width = 8
-paper-height = 10
-margin-top = 0.5
-margin-bottom = 0.5
-margin-left = 0.1
-margin-right = 0.1
+# [output.pdf]
+# display-header-footer = false
+# scale = 0.8
+# paper-width = 8
+# paper-height = 10
+# margin-top = 0.5
+# margin-bottom = 0.5
+# margin-left = 0.1
+# margin-right = 0.1
 
 # [preprocessor.inline-highlighting]
 #default-language = "none"
