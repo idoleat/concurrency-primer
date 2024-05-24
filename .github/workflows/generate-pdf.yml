@@ -41,7 +41,6 @@ jobs:
           echo "margin-right = 0.1" >> book.toml
           echo "" >> book.toml
           echo "[output.pdf-outline]" >> book.toml
-          echo "like-wkhtmltopdf = true" >> book.toml
       - name: Build Book
         run: |
           # This assumes your book is in the root of your repository.
