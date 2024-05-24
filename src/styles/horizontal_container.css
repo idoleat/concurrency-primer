@@ -1,0 +1,10 @@
+.hori_container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.hori_container > * {
+    min-width: 200px;
+    margin: 10px;
+}

@@ -56,14 +56,14 @@ like those depicted in \fig{pipeline}<!--FIXME-->, suggest.
 They are equipped with multiple data paths tailored for various instruction types and schedulers that reorder and direct instructions through these paths.
 
 {{#include images/pipeline.svg}}
-*<figcaption>A traditional five-stage <small>CPU</small> pipeline with fetch, decode, execute, memory access, and write-back stages. Modern designs are much more complicated, often reordering instructions on the fly.</figcaption>*
+> *A traditional five-stage <small>CPU</small> pipeline with fetch, decode, execute, memory access, and write-back stages. Modern designs are much more complicated, often reordering instructions on the fly.*
 
 It is quite common to form oversimplified views about memory operations.
 Picturing a multi-core processor setup might lead us to envision a model similar to \fig{ideal-machine}, <!--FIXME-->
 wherein each core alternately accesses and manipulates the system's memory.
 
 {{#include images/ideal-machine.svg}}
-*<figcaption>An idealized multi-core processor where cores take turns accessing a single shared set of memory.</figcaption>*
+> *An idealized multi-core processor where cores take turns accessing a single shared set of memory.*
 
 The reality is far from straightforward.
 Although processor speeds have surged exponentially in recent decades,
@@ -76,7 +76,7 @@ thus allowing writes made by one core to be observable by others even when utili
 presents a significant challenge.
 
 {{#include images/mp-cache.svg}}
-*<figcaption>A common memory hierarchy for modern multi-core processors.</figcaption>*
+> *A common memory hierarchy for modern multi-core processors.*
 
 The myriad complexities within multithreaded programs on multi-core <small>CPU</small>s lead to a lack of a uniform concept of "now".
 Establishing some semblance of order among threads requires a concerted effort involving the hardware,

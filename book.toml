@@ -1,15 +1,21 @@
 [book]
+title = "Concurrency Primer"
 authors = ["Matt Kline", "Ching-Chun (Jim) Huang"]
+description = "What every systems programmer should know about concurrency"
 language = "en"
 multilingual = false
 src = "src"
-title = "Concurrency Primer"
 
 [output.html]
 smart-punctuation = true
 mathjax-support = true
 git-repository-url = "https://github.com/sysprog21/concurrency-primer"
 edit-url-template = "https://github.com/sysprog21/concurrency-primer/issues/new?title={path}"
+additional-css = ["src/styles/horizontal_container.css"]
+# additional-js = []
+
+[output.html.print]
+page-break = false # insert page-break after each chapter
 
 # [preprocessor.inline-highlighting]
 #default-language = "none"
