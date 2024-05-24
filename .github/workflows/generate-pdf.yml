@@ -49,7 +49,7 @@ jobs:
           mdbook build
       - name: Change pdf named
         run: |
-          mv book/pdf/output.pdf ./concurrency-primer.pdf
+          mv book/pdf-outline/output.pdf ./concurrency-primer.pdf
       - name: Delete old release
         uses: cb80/delrel@latest
         with:
