@@ -50,10 +50,6 @@ jobs:
         uses: cb80/delrel@latest
         with:
           tag: mdbook-pdf
-      - name: Tag
-        run: |
-          git tag mdbook-pdf
-          git push -f --tags
       - name: Create and Upload Release
         id: release
         uses: softprops/action-gh-release@v2
