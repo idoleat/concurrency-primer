@@ -40,3 +40,18 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Build pdf
+        run: |
+          docker run --rm -v ./book:/book -v ./mdbook:/mdbook hollowman6/mdbook-pdf
+          mv book/pdf/output.pdf ./concurrency-primer.pdf
+      - name: Create and Upload Release
+        id: release
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            ./concurrency-primer.pdf
+          tag_name: ${{ github.ref_name }}
+          body: |
+            Changes in this Release

@@ -17,5 +17,8 @@ additional-css = ["src/styles/horizontal_container.css"]
 [output.html.print]
 page-break = false # insert page-break after each chapter
 
+[output.pdf]
+display-header-footer = false
+
 # [preprocessor.inline-highlighting]
 #default-language = "none"
