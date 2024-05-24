@@ -31,7 +31,7 @@ jobs:
           url="https://github.com/HollowMan6/mdbook-pdf/releases/download/${tag}/mdbook-pdf-${tag}-x86_64-unknown-linux-gnu"
           mkdir mdbook-pdf
           curl --output-dir "mdbook-pdf" --output mdbook-pdf -sSL $url
-          chmod +x ./mdbook-pdf/* 
+          chmod +x ./mdbook-pdf/*
           echo `pwd`/mdbook-pdf >> $GITHUB_PATH
       - name: Build Book
         run: |
@@ -40,7 +40,7 @@ jobs:
           mdbook build
       - name: Change pdf named
         run: |
-          mv book/pdf/output ./concurrency-primer.pdf
+          mv book/pdf/output.pdf ./concurrency-primer.pdf
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
