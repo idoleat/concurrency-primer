@@ -1,6 +1,6 @@
 # Summary
 
-- [Abstract](./abstract.md)
+[Abstract](./abstract.md)
 - [Background](./background.md)
 - [Enforcing law and order](./enforcing_law_and_order.md)
 - [Atomicity](./atomicity.md)
@@ -14,3 +14,6 @@
 - [Sequential consistency on weakly-ordered hardware](./seq_cst_on_weakly_rodered_hw.md)
 - [Implementing atomic read-modify-write operations with LL/SC instructions](./rmw_with_ll-sc.md)
   - [Spurious LL/SC failures](./spurious_ll-sc_failures.md)
+- [Do we always need sequentially consistent operations?](./do_we_always_need_seq-cst.md)
+- [Memory orderings](./memory_orderings.md)
+  - [Acquire and release](./memory_ordering/acq_and_rel.md)

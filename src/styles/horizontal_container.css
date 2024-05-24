@@ -5,6 +5,5 @@
 }
 
 .hori_container > * {
-    min-width: 200px;
     margin: 10px;
 }
