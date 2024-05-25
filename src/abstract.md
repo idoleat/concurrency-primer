@@ -1,7 +1,5 @@
 # Concurrency Primer <small><small><small>[^note]</small></small></small>
 Matt Kline and Ching-Chun (Jim) Huang  
-May 23rd, 2024
-<!--FIXME: use something like gettime()-->
 
 ## Abstract
 System programmers are acquainted with tools such as mutexes, semaphores, and condition variables.

@@ -6,6 +6,9 @@ language = "en"
 multilingual = false
 src = "src"
 
+[preprocessor.add_release_time]
+command = "python src/preprocessors/add_release_time.py"
+
 [output.html]
 smart-punctuation = true
 mathjax-support = true
