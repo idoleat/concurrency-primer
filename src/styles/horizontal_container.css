@@ -7,3 +7,9 @@
 .hori_container > * {
     margin: 10px;
 }
+
+svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
