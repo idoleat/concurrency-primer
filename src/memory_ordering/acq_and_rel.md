@@ -7,8 +7,7 @@ A release works the opposite manner, allowing actions to move in an \\(after\to 
 On <small>Arm</small> and other weakly-ordered architectures, this enables us to eliminate one of the memory barriers in each operation,
 such that
 
-<div class="hori_container">
-
+:::horizontal
 ```cpp
 int acquireFoo()
 {
@@ -25,10 +24,9 @@ acquireFoo:
   dmb
   bx lr
 ```
-</div>
+:::
 
-<div class="hori_container">
-
+:::horizontal
 ```cpp
 void releaseFoo(int i)
 {
@@ -45,7 +43,7 @@ releaseFoo:
   str r0, [r3, #0]
   bx lr
 ```
-</div>
+:::
 
 Together, these provide \\(writer\to reader\\) synchronization:
 if thread *W* stores a value with release semantics,

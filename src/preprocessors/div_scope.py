@@ -4,11 +4,11 @@ import sys
 # This is not idiot-proof. Meaning that if you use scope with rules not defined here,
 # you will have </div>s generated but no <div>s
 def replace(chap):
-    chap['Chapter']['content'] = chap['Chapter']['content'].replace(":::horizontal", "<div class=\"hori_container\">\n")
+    chap['Chapter']['content'] = chap['Chapter']['content'].replace("\n:::horizontal", "\n<div class=\"hori_container\">\n")
     # add nother rule by changing name after ::: and class name
 
     # must be the last one
-    chap['Chapter']['content'] = chap['Chapter']['content'].replace(":::", "</div>")
+    chap['Chapter']['content'] = chap['Chapter']['content'].replace("\n:::", "\n</div>")
 
 def travers(chapters):
     for chap in chapters:
