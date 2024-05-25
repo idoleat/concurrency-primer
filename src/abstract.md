@@ -1,5 +1,6 @@
 # Concurrency Primer <small><small><small>[^note]</small></small></small>
 Matt Kline and Ching-Chun (Jim) Huang  
+<!--AddTimeHere-->
 
 ## Abstract
 System programmers are acquainted with tools such as mutexes, semaphores, and condition variables.
