@@ -14,8 +14,7 @@ Let's examine <small>Arm</small>, since it is both popular and straightforward.
 Consider the simplest atomic operations: loads and stores.
 Given some `atomic_int foo`,
 
-<div class="hori_container">
-
+:::horizontal
 ```c
 int getFoo()
 {
@@ -33,10 +32,9 @@ getFoo:
   dmb
   bx lr
 ```
-</div>
+:::
 
-<div class="hori_container">
-
+:::horizontal
 ```c
 void setFoo(int i)
 {
@@ -54,7 +52,7 @@ setFoo:
   dmb
   bx lr
 ```
-</div>
+:::
 
 We load the address of our atomic variable into a scratch register `r3`,
 place our load or store operation between memory barriers `dmb`, and then proceed.

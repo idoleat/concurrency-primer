@@ -9,6 +9,9 @@ src = "src"
 [preprocessor.add_release_time]
 command = "python src/preprocessors/add_release_time.py"
 
+[preprocessor.div_scope]
+command = "python src/preprocessors/div_scope.py"
+
 [output.html]
 smart-punctuation = true
 mathjax-support = true
