@@ -88,7 +88,7 @@ A stall, or suspension of forward progress, occurs when an instruction awaits th
 
 [^b]: <small>RAM</small> accesses data not byte by byte, but in larger units known as *cache lines*.
 Grouping frequently used variables on the same cache line means they are processed together,
-significantly boosting performance. However, as discussed in [false-sharing](/cache_effect_and_false_sharing.html) chapter,
+significantly boosting performance. However, as discussed in [false-sharing](./cache_effect_and_false_sharing.html) chapter,
 this strategy can lead to complications when cache lines are shared across cores.
 
 [^c]: Profile-guided optimization (PGO) often employs this strategy.

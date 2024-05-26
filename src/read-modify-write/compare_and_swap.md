@@ -22,7 +22,7 @@ bool atomic<T>::compare_exchange_strong(
 ```
 
 The `compare_exchange_strong` suffix may leave you wondering if there is a corresponding "weak" <small>CAS</small>.
-Indeed, there is. However, we will delve into that topic later in chapter [Spurious LL/SC failures](/spurious_ll-sc_failures.html).
+Indeed, there is. However, we will delve into that topic later in chapter [Spurious LL/SC failures](../spurious_ll-sc_failures.html).
 Let's say we have some long-running task that we might want to cancel.
 We'll give it three states: *idle*, *running*, and *cancelled*, and write a loop that exits when it is cancelled.
 

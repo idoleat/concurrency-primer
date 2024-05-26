@@ -6,7 +6,7 @@ But as you might expect, these barriers can have a noticeable impact on performa
 After all, they inhibit optimizations that your compiler and hardware would otherwise make.
 
 What if we could avoid some of this slowdown?
-Consider a simple case like the spinlock from [test and set](/read-modify-write/test_and_set.html#test-and-set).
+Consider a simple case like the spinlock from [test and set](./read-modify-write/test_and_set.html#test-and-set).
 Between the `lock()` and `unlock()` calls, we have a *critical section* where we can safely modify shared state protected by the lock.
 Outside this critical section, we only read and write to things that are not shared with other threads.
 ```cpp

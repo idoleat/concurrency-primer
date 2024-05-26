@@ -25,7 +25,7 @@ In the second, subsequent sensor inputs could be missed if the <small>ISR</small
 Lockless algorithms are not inherently superior or quicker than blocking ones;
 they serve different purposes with their own design philosophies.
 Additionally, the mere use of atomic operations does not render algorithms lock-free.
-For example, our basic spinlock discussed in [test and set](/read-modify-write/test_and_set.html#test-and-set) is still considered a blocking algorithm even though it eschews <small>OS</small>-specific syscalls for making the blocked thread sleep.
+For example, our basic spinlock discussed in [test and set](./read-modify-write/test_and_set.html#test-and-set) is still considered a blocking algorithm even though it eschews <small>OS</small>-specific syscalls for making the blocked thread sleep.
 Putting a blocked thread to sleep is often an optimization,
 allowing the operating system's scheduler to allocate <small>CPU</small> resources to active threads until the blocked one is revived.
 Some concurrency libraries even introduce hybrid locks that combine brief spinning with sleeping to balance <small>CPU</small> usage and context-switching overheads.

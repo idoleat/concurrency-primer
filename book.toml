@@ -19,6 +19,7 @@ git-repository-url = "https://github.com/sysprog21/concurrency-primer"
 edit-url-template = "https://github.com/sysprog21/concurrency-primer/issues/new?title={path}"
 additional-css = ["src/styles/horizontal_container.css"]
 # additional-js = []
+site-url = "https://idoleat.github.io/concurrency-primer/"
 
 [output.html.print]
 page-break = false # insert page-break after each chapter
