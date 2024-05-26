@@ -3,7 +3,7 @@
 Relaxed atomic operations are useful for variables shared between threads where *no specific order* of operations is needed.
 Although it may seem like a niche requirement, such scenarios are quite common.
 
-Refer back to our discussions on \secref{atomicity} and \secref{rmw} operations, <!--FIXME-->
+Refer back to our discussions on chapter [Atomicity](/atomicity.html) and [read-modify-write operations](/read-modify-write.html),
 where a worker thread increments a counter that a <small>UI</small> thread then reads.
 In this case, the counter can be incremented using `fetch_add(1, memory_order_relaxed)` because the only requirement is atomicity;
 the counter itself does not coordinate synchronization.

@@ -52,14 +52,14 @@ Furthermore, calculations might be performed speculatively ahead of a branch dec
 Even without compiler alterations,
 we would face challenges because our hardware complicates matters further!
 Modern <small>CPU</small>s operate in a fashion far more complex than what traditional pipelined methods,
-like those depicted in \fig{pipeline}<!--FIXME-->, suggest.
+like those depicted in the figure below, suggest.
 They are equipped with multiple data paths tailored for various instruction types and schedulers that reorder and direct instructions through these paths.
 
 {{#include images/pipeline.svg}}
 > *A traditional five-stage <small>CPU</small> pipeline with fetch, decode, execute, memory access, and write-back stages. Modern designs are much more complicated, often reordering instructions on the fly.*
 
 It is quite common to form oversimplified views about memory operations.
-Picturing a multi-core processor setup might lead us to envision a model similar to \fig{ideal-machine}, <!--FIXME-->
+Picturing a multi-core processor setup might lead us to envision a model similar to the figure below,
 wherein each core alternately accesses and manipulates the system's memory.
 
 {{#include images/ideal-machine.svg}}
@@ -83,12 +83,12 @@ Establishing some semblance of order among threads requires a concerted effort i
 compiler, programming language, and your application.
 Let's delve into our options and the tools necessary for this endeavor.
 
-[^a]: Most <small>CPU</small> architectures execute segments of multiple instructions concurrently to improve throughput (refer to \fig{pipeline}).<!--FIXME-->
+[^a]: Most <small>CPU</small> architectures execute segments of multiple instructions concurrently to improve throughput (refer to the [pipeline figure](#pipeline)).
 A stall, or suspension of forward progress, occurs when an instruction awaits the outcome of a preceding one in the pipeline until the necessary result becomes available.
 
 [^b]: <small>RAM</small> accesses data not byte by byte, but in larger units known as *cache lines*.
 Grouping frequently used variables on the same cache line means they are processed together,
-significantly boosting performance. However, as discussed in \secref{false-sharing}, <!--FIXME-->
+significantly boosting performance. However, as discussed in [false-sharing](/cache_effect_and_false_sharing.html) chapter,
 this strategy can lead to complications when cache lines are shared across cores.
 
 [^c]: Profile-guided optimization (PGO) often employs this strategy.

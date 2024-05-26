@@ -4,7 +4,7 @@ Before we go, we should lay a common misconception surrounding the `volatile` ke
 Perhaps because of how it worked in older compilers and hardware,
 or due to its different meaning in languages like Java and C#,\punckern<small>footnote</small>[^a]
 some believe that the keyword is useful for building concurrency tools.
-Except for one specific case (see \secref{fusing}<!--FIXME-->), this is false.
+Except for one specific case (see [Atomic fusion](/atomic_fusion.html) chapter), this is false.
 
 The purpose of `volatile` is to inform the compiler that a value can be changed by something besides the program we are executing.
 This is useful for memory-mapped <small>IO</small> (<small>MMIO</small>),
