@@ -1,3 +1,4 @@
+{{#title Concurrency Primer}}
 # Concurrency Primer <small><small><small>[^note]</small></small></small>
 Matt Kline and Ching-Chun (Jim) Huang  
 <!--AddTimeHere-->
