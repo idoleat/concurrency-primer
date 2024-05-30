@@ -7,7 +7,7 @@ a hour-long talk on this topic.
 [C++ atomic<> Weapons: The C++11 Memory Model and Modern Hardware](https://herbsutter.com/2013/02/11/atomic-weapons-the-c-memory-model-and-modern-hardware/)
 by Herb Sutter,
 a three-hour talk that provides a deeper dive.
-Also the source of figures \ref{ideal-machine} and \ref{dunnington}.<!--FIXME-->
+Also the source of figures [idealized multi-core](./background.md#ideal-machine) processor and [common memory hierarchy](./background.md#mp-cache)
 
 [Futexes are Tricky](https://www.akkadia.org/drepper/futex.pdf),
 a paper by Ulrich Drepper on how mutexes and other synchronization primitives can be built in Linux using atomic operations and syscalls.
