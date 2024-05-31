@@ -91,7 +91,7 @@ function processDivTags() {
 
         const aTag = document.createElement('a');
         aTag.href = href;
-        aTag.textContent = '▶ Open in Godbolt';
+        aTag.textContent = '▶ Open in Compiler Explorer';
 
         div.insertAdjacentElement('afterend', aTag);
       }
