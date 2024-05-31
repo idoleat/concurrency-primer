@@ -1,18 +1,37 @@
 #include <stdatomic.h>
 #include <stdbool.h>
+#include <stdio.h>
+#include <threads.h>
+#include <unistd.h>
 int v = 0;
-atomic_bool v_ready = false;
+bool v_ready = false;
 
-void *threadA()
+int threadA(void *args)
 {
     v = 42;
     v_ready = true;
-}
-int bv;
 
-void *threadB()
+    return 0;
+}
+
+int threadB(void *args)
 {
-    while(!v_ready) { /* wait */ }
-    bv = v;
-    /* Do something */
+    for (int i = 0; i < 3; i++) {
+        if (!v_ready) {
+            printf("false: %d\n", v);
+        }
+        if (v_ready) {
+            printf("true: %d\n", v);
+        }
+    }
+    return 0;
+}
+
+int main()
+{
+    thrd_t A, B;
+    thrd_create(&B, threadB, NULL);
+    thrd_create(&A, threadA, NULL);
+    sleep(1);
+    return 0;
 }
