@@ -5,6 +5,7 @@ import sys
 # you will have </div>s generated but no <div>s
 def replace(chap):
     chap['Chapter']['content'] = chap['Chapter']['content'].replace("\n:::horizontal", "\n<div class=\"hori_container\">\n")
+    chap['Chapter']['content'] = chap['Chapter']['content'].replace("\n:::CE", "\n<div class=\"hidden ce\">\n")
     # add nother rule by changing name after ::: and class name
 
     # must be the last one

@@ -28,3 +28,4 @@
 - [Takeaways](./takeaways.md)
 - [Additional Resources](./additional_resources.md)
 - [Contributing](./contributing.md)
+- [Compiler Explorer Test](./ce_test.md)
