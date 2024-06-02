@@ -39,7 +39,7 @@ They look and act just like the integer types they mirror (e.g., `bool`\\(\to\\)
 but the compiler ensures that other variables' loads and stores are not reordered around theirs.
 
 Informally, we can think of atomic variables as rendezvous points for threads.
-By making `v\_ready` atomic,
+By making `v_ready` atomic,
 `v = 42`, is now guaranteed to happen before `v_ready = true`, in thread *A*,
 just as `my_v = v`, must happen after reading `v_ready`,
 in thread *B*.
