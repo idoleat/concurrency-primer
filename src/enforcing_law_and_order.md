@@ -49,6 +49,6 @@ This model, defined by Leslie Lamport in 1979,
 is called \\(sequential\space consistency\\).
 
 [^a]: The ISO C11 standard adopted its concurrency features,
-almost directly, from the C++!1 standard.
+almost directly, from the C++11 standard.
 Thus, the functionalities discussed should be the same in both languages,
 with some minor syntactical differences favoring C++ for clarity.
