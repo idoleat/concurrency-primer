@@ -43,7 +43,7 @@ By making `v\_ready` atomic,
 `v = 42`, is now guaranteed to happen before `v_ready = true`, in thread *A*,
 just as `my_v = v`, must happen after reading `v_ready`,
 in thread *B*.
-Formally, atomic types establish a \textit{single total modification order} where,
+Formally, atomic types establish *single total modification order* where,
 "[...] the result of any execution is the same as if the reads and writes occurred in some order, and the operations of each individual processor appear in this sequence in the order specified by its program."
 This model, defined by Leslie Lamport in 1979,
 is called \\(sequential\space consistency\\).
