@@ -32,7 +32,7 @@ void *threadB()
 }
 ```
 
-The C and C++ standard libraries define a series of these types in `<stdatomic.h>` and `atomic`,
+The C and C++ standard libraries define a series of these types in `<stdatomic.h>` and `<atomic>`,
 respectively.
 They look and act just like the integer types they mirror (e.g., `bool`\\(\to\\)`atomic_bool`},
 `int`\\(\to\\)`atomic_int`, etc.),
