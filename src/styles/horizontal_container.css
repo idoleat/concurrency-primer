@@ -1,0 +1,23 @@
+.hori_container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.hori_container > * {
+    margin: 10px;
+}
+
+/* Figures are included inline (`{{#include images/foo.svg}}`), so they need to
+ * be constrained to the text column.
+ *
+ * This must not be a bare `svg` selector: since mdbook 0.5 the toolbar icons
+ * are inline <svg> too, and turning them into full-width blocks breaks the
+ * menu bar's layout.  Restrict the rule to figures in the chapter body and
+ * skip anything mdbook wraps in .fa-svg. */
+main > svg,
+main :not(.fa-svg) > svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

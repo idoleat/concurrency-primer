@@ -1,0 +1,37 @@
+[book]
+title = "Concurrency Primer"
+authors = ["Matt Kline", "Ching-Chun (Jim) Huang"]
+description = "What every systems programmer should know about concurrency"
+language = "en"
+src = "src"
+
+[preprocessor.add_release_time]
+command = "python src/preprocessors/add_release_time.py"
+
+[preprocessor.div_scope]
+command = "python src/preprocessors/div_scope.py"
+
+[output.html]
+smart-punctuation = true
+mathjax-support = true
+git-repository-url = "https://github.com/sysprog21/concurrency-primer"
+edit-url-template = "https://github.com/sysprog21/concurrency-primer/issues/new?title={path}"
+additional-css = ["src/styles/horizontal_container.css"]
+additional-js = ["src/scripts/CE_api.js"]
+site-url = "https://idoleat.github.io/concurrency-primer/"
+
+[output.html.print]
+page-break = false # insert page-break after each chapter
+
+# [output.pdf]
+# display-header-footer = false
+# scale = 0.8
+# paper-width = 8
+# paper-height = 10
+# margin-top = 0.5
+# margin-bottom = 0.5
+# margin-left = 0.1
+# margin-right = 0.1
+
+# [preprocessor.inline-highlighting]
+#default-language = "none"
