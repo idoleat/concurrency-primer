@@ -39,6 +39,8 @@ jobs:
           echo "margin-bottom = 0.5" >> book.toml
           echo "margin-left = 0.1" >> book.toml
           echo "margin-right = 0.1" >> book.toml
+          echo "static_site_url = \"https://github.com/idoleat/concurrency-primer\"" >> book.toml
+          echo "generate-document-outline = false" >> book.toml
           echo "" >> book.toml
           echo "[output.pdf-outline]" >> book.toml
       - name: Build Book
