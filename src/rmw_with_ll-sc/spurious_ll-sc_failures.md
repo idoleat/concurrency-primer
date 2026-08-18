@@ -25,11 +25,8 @@ Many lockless algorithms use <small>CAS</small> loops like this to atomically up
 They:
 
 1.  Read the variable.
-
 2.  Perform some (non-atomic) operation on its value.
-
 3.  <small>CAS</small> the new value with the previous one.
-
 4.  If the <small>CAS</small> failed, another thread beat us to the punch, so try again.
 
 If we use `compare_exchange_strong` for this family of algorithms,

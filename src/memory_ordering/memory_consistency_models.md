@@ -41,7 +41,6 @@ If this program is sequentially consistent, then in the global interleaving Thre
 Across the whole program, the following six interleavings are possible:
 
 :::horizontal
-
 ```text
 x = 1
 y = 1
@@ -62,11 +61,9 @@ x = 1
         r2 = x(1)
 y = 1
 ```
-
 :::
 
 :::horizontal
-
 ```text
         r1 = y(0)
 x = 1
@@ -87,7 +84,6 @@ y = 1
 x = 1
 y = 1
 ```
-
 :::
 
 > *Six possible executions of the message-passing litmus test under sequential consistency.*
@@ -97,8 +93,7 @@ Sequential consistency therefore allows only `(r1, r2)` to be `(1, 1)`, `(0, 1)`
 Software may rely on `(1, 0)` never occurring, while hardware remains free to optimize as long as it preserves that guarantee.
 
 <a id="hw-seq-cst"></a>
-<!-- IMAGE PLACEHOLDER: images/hw-seq-cst -->
-
+![hw-seq-cst image](../../images/hw-seq-cst.png)
 > *A simple model of sequentially consistent hardware.*
 
 [The figure above](#hw-seq-cst) sketches one intuitive implementation: each thread accesses a single shared memory, and that memory processes one read or write at a time.
@@ -112,8 +107,7 @@ Modern processors therefore tend to implement weaker models.
 For example, x86 processors are usually described using the total store order (TSO) model, which can be approximated by the following picture:
 
 <a id="hw-tso"></a>
-<!-- IMAGE PLACEHOLDER: images/hw-tso -->
-
+![hw-tso image](../../images/hw-tso.png)
 > *A simplified model of x86-TSO hardware.*
 
 Under TSO, all processors can read from a single shared memory, but each processor first places its own writes into a per-core write queue, often called a store buffer.
@@ -166,8 +160,7 @@ Under TSO, all threads agree on the order in which committed writes become visib
 ## Relaxed memory models
 
 <a id="hw-relaxed"></a>
-<!-- IMAGE PLACEHOLDER: images/hw-relaxed -->
-
+![hw-relaxed](../../images/hw-relaxed.png)
 > *A simplified relaxed model resembling <small>ARM</small> hardware.*
 
 [The figure above](#hw-relaxed) sketches a more relaxed model similar to that used by modern <small>ARM</small> processors.

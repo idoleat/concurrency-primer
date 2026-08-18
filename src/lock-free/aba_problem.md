@@ -44,25 +44,15 @@ In the `worker` function, we have a thread trying to claim the job.
 ```
 
 Consider the following scenario:
-
-1.  There is only one job left.
-
-2.  Thread A loads the pointer to the job by `atomic_load()`.
-
-3.  Thread A is preempted.
-
-4.  Thread B claims the job and successfully updates `thrd_pool->head->prev`.
-
-5.  Thread B sets the thread pool state to idle.
-
-6.  The main thread finishes waiting and adds more jobs.
-
-7.  The memory allocator reuses the recently freed memory for new jobs.
-
-8.  Fortunately, the first added job has the same address as the one thread A held.
-
-9.  Thread A is back in running state. The comparison result is equal so it updates `thrd_pool->head->prev` with the old `job->prev`, which is already a dangling pointer.
-
+1. There is only one job left.
+2. Thread A loads the pointer to the job by `atomic_load()`.
+3. Thread A is preempted.
+4. Thread B claims the job and successfully updates `thrd_pool->head->prev`.
+5. Thread B sets the thread pool state to idle.
+6. The main thread finishes waiting and adds more jobs.
+7. The memory allocator reuses the recently freed memory for new jobs.
+8. Fortunately, the first added job has the same address as the one thread A held.
+9. Thread A is back in running state. The comparison result is equal so it updates `thrd_pool->head->prev` with the old `job->prev`, which is already a dangling pointer.
 10. Another thread loads the dangling pointer from `thrd_pool->head->prev`.
 
 Notice that even though `job->prev` is not loaded explicitly before the comparison, the compiler could place loading instructions before the comparison.

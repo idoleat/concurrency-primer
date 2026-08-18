@@ -25,8 +25,7 @@ During this time, the consumers are not busy waiting but rather waiting for the 
 This is because the mechanism is an advanced form of a mutex lock.
 
 <a id="fig:spmc-solution1"></a>
-<!-- IMAGE PLACEHOLDER: images/spmc-solution1 -->
-
+{{#include ../../images/spmc-solution1.svg}}
 > *The interaction between the producer and consumer in SPMC Solution 1,
 > including their state transitions.*
 

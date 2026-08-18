@@ -5,17 +5,11 @@ are considered sequentially consistent.
 However, this is just one among many possible orderings.
 We will explore each of these orderings in detail.
 A comprehensive list, as well as the corresponding enumerations used by the C and C++ <small>API</small>, can be found here:
-
 -   Sequentially Consistent (`memory_order_seq_cst`)
-
 -   Acquire (`memory_order_acquire`)
-
 -   Release (`memory_order_release`)
-
 -   Relaxed (`memory_order_relaxed`)
-
 -   Acquire-Release (`memory_order_acq_rel`)
-
 -   Consume (`memory_order_consume`)
 
 To pick an ordering,
@@ -81,7 +75,6 @@ void releaseFoo(int i)
 become:
 
 :::horizontal
-
 ```armasm
 acquireFoo:
   ldr r3, <&foo>
@@ -97,7 +90,6 @@ releaseFoo:
   str r0, [r3, #0]
   bx lr
 ```
-
 :::
 
 Together, these provide \\(writer \to reader\\) synchronization:
@@ -212,7 +204,6 @@ Order does not matter when incrementing the reference count since no action is t
 However, when we decrement, we must ensure that:
 
 1.  All access to the referenced object happens *before* the count reaches zero.
-
 2.  Deletion happens *after* the reference count reaches zero.[^2]
 
 Curious readers might be wondering about the difference between acquire-release and sequentially consistent operations.

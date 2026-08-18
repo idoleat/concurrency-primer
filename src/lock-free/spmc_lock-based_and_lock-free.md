@@ -20,8 +20,7 @@ Thus, there is no need to wait due to a lack of jobs;
 the only wait is for acquiring the lock to access the job queue.
 
 <a id="fig:spmc-solution2"></a>
-<!-- IMAGE PLACEHOLDER: images/spmc-solution2 -->
-
+{{#include ../../images/spmc-solution2.svg}}
 > *The interaction between the producer and consumer in Solution 2,
 > including their state transitions.*
 

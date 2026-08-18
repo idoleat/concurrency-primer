@@ -23,8 +23,7 @@ One way to avoid it is to pad atomic variables with a cache line of private data
 but this is obviously a large space-time trade-off.
 
 <a id="fig:false-sharing"></a>
-<!-- IMAGE PLACEHOLDER: images/false-sharing -->
-
+{{#include ../images/false-sharing.svg}}
 > *Processor 1 and Processor 2 operate independently on variables A and B.
 > Simultaneously, they read the cache line containing these two variables.
 > In the next time step, each processor modifies A and B in their private L1 cache separately.
@@ -49,8 +48,7 @@ resulting in little practical benefit (only one processor gains the lock) and si
 This disparity severely limits the scalability of the spin lock.
 
 <a id="fig:spinlock"></a>
-<!-- IMAGE PLACEHOLDER: images/spinlock -->
-
+{{#include ../images/spinlock.svg}}
 > *Three processors use a lock as a communication channel to ensure correct access to the shared L2 cache.
 > Processors 2 and 3 are trying to acquire a lock that is held by processor 1.
 > Therefore, when processor 1 unlocks,

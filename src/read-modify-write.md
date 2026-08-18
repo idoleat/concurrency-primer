@@ -8,8 +8,7 @@ In [Atomicity](./atomicity.html), there is a need for atomicity to ensure that a
 This establishes the correct order of operations from different threads.
 
 <a id="fig:atomic-rmw"></a>
-<!-- IMAGE PLACEHOLDER: images/atomic-rmw -->
-
+{{#include ../images/atomic-rmw.svg}}
 > *Exchange, Test and Set, Fetch and..., Compare and Swap can all be transformed into atomic RMW operations, ensuring that operations like \\(t1 \to t2 \to t3\\) will become an atomic step.*
 
 Atomic loads and stores are all well and good when we do not need to consider the previous state of atomic variables, but sometimes we need to read a value, modify it, and write it back as a single atomic step.

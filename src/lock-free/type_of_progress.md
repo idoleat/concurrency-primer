@@ -19,8 +19,7 @@ Achieving wait-free is the most optimal approach,
 allowing each thread to make progress without being blocked by other threads.
 
 <a id="fig:progress-type"></a>
-<!-- IMAGE PLACEHOLDER: images/progress-type -->
-
+{{#include ../../images/progress-type.svg}}
 > *In a wait-free system, each thread is guaranteed to make progress at every moment because no thread can block others.
 > This ensures that the overall system can always make progress.
 > In a lock-free system, at Time 1, Thread 1 may cause other threads to wait while it performs its operation.

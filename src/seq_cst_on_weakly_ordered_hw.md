@@ -15,7 +15,6 @@ Consider the simplest atomic operations: loads and stores.
 Given some `atomic_int foo`,
 
 :::horizontal
-
 ```c
 int getFoo()
 {
@@ -33,11 +32,9 @@ getFoo:
   dmb
   bx lr
 ```
-
 :::
 
 :::horizontal
-
 ```c
 void setFoo(int i)
 {
@@ -55,7 +52,6 @@ setFoo:
   dmb
   bx lr
 ```
-
 :::
 
 We load the address of our atomic variable into a scratch register (`r3`),

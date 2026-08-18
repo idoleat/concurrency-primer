@@ -8,8 +8,7 @@ reducing the amount of shared state and the granularity of the shared resource u
 Therefore, to achieve fully lock-free programming, we change the data structure to reduce the granularity of locks.
 
 <a id="fig:spmc-solution3"></a>
-<!-- IMAGE PLACEHOLDER: images/spmc-solution3 -->
-
+{{#include ../../images/spmc-solution3.svg}}
 > *The left side shows that the lock protects the entire job queue to ensure exclusive access to its head for multiple threads.
 > The right side illustrates that each thread has its own slot for accessing jobs,
 > not only achieving exclusivity through data structure but also eliminating the need for shared resources for communication.*

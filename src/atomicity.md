@@ -21,8 +21,7 @@ just make sure that any variables used for thread synchronization
 are no larger than the <small>CPU</small> word size.
 
 <a id="fig:atomicity"></a>
-<!-- IMAGE PLACEHOLDER: images/atomicity -->
-
+{{#include ../images/atomicity.svg}}
 > *A flowchart depicting how two concurrent programs communicate and coordinate through a shared resource to achieve a goal, accessing the shared resource.*
 
 Summary of concepts from the first three sections, as shown in [the figure](#fig:atomicity).

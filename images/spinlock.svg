@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="1077.3333"
+   height="525.33331"
+   viewBox="0 0 1077.3333 525.33331"
+   sodipodi:docname="spinlock.pdf"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:export-bgcolor="#ffffffff">
+    <inkscape:page
+       x="0"
+       y="0"
+       inkscape:label="1"
+       id="page1"
+       width="1077.3333"
+       height="525.33331"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     id="g1"
+     inkscape:groupmode="layer"
+     inkscape:label="1">
+    <path
+       id="path1"
+       d="M 48,48 H 280 V 238 H 48 Z"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text1"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,189.33333,84.265625)"><tspan
+         id="tspan1"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 -0.33600587"
+         y="0">chip 1</tspan></text>
+    <path
+       id="path2"
+       d="M 288,49 H 520 V 238 H 288 Z"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text2"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,509.33333,85.598959)"><tspan
+         id="tspan2"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 -0.33600587"
+         y="0">chip 2</tspan></text>
+    <path
+       id="path3"
+       d="M 528,49 H 760 V 238 H 528 Z"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text3"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,829.33333,85.598959)"><tspan
+         id="tspan3"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 -0.33600587"
+         y="0">chip 3</tspan></text>
+    <path
+       id="path4"
+       d="m 56,79 h 216 v 38 H 56 Z"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text4"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,162.66667,125.59896)"><tspan
+         id="tspan4"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0 0 -0.18200317 -0.33600587 0 0.3220056 0.30800536 -0.18200317"
+         y="0">processor 1</tspan><tspan
+         id="tspan5"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="3.9999957"
+         dx="0 0.37800658 0.084001459 0 -0.2240039 0 0 0 0 -0.19600342 -0.33600587"
+         y="15.000001">t4 : unlock</tspan></text>
+    <path
+       id="path5"
+       d="m 115,168.5 h 144 v 61 H 115 Z"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text5"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,186.66667,244.93229)"><tspan
+         id="tspan6"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 -0.29400513 0.084001459 0 -0.33600587 -0.098001711 -0.3500061"
+         y="0">L1 cache line</tspan></text>
+    <path
+       id="path6"
+       d="M 115,191.5 H 259"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text6"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,169.33333,285.59896)"><tspan
+         id="tspan7"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0 -0.15400268 -0.3500061"
+         y="0">lock</tspan></text>
+    <path
+       id="path7"
+       d="m 168,229.5 v -38"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text7"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,250,275.59896)"><tspan
+         id="tspan8"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0.33600587 0 0 0.36400634 -0.098001711 0.36400634"
+         y="0">Private</tspan><tspan
+         id="tspan9"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="-7.5000005"
+         dx="0 0 0 0.28000489 -0.18200317 0 0 -0.33600587"
+         y="15.000001">Resource</tspan></text>
+    <path
+       id="path9"
+       d="m 163,117.473 c 0,0 0,40.984 0,40.984"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <path
+       id="path10"
+       d="m 166.5,158.457 -3.5,10 -3.5,-10 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text10"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,141.33333,194.93229)"><tspan
+         id="tspan10"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0.37800658 0.084001459 0 -0.2240039 0 0 -0.15400268 -0.3500061"
+         y="0">t2 : lock</tspan></text>
+    <path
+       id="path11"
+       d="m 211,117.473 c 0,0 0,40.984 0,40.984"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <path
+       id="path12"
+       d="m 214.5,158.457 -3.5,10 -3.5,-10 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text12"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,249.33333,194.93229)"><tspan
+         id="tspan12"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0 0 0.37800658 0.084001459 0 -0.2240039 0 -0.098001711 -0.33600587 -0.3500061 0 0.28000489"
+         y="0">  t5 : access</tspan></text>
+    <path
+       id="path13"
+       d="m 187.012,281 c 0,0.012 -0.024,0.012 -0.024,0 0,-0.012 0.024,-0.012 0.024,0"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <path
+       id="path14"
+       d="m 187,229.535 c 0,0 0,41.383 0,41.383"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <path
+       id="path15"
+       d="m 190.5,270.918 -3.5,10 -3.5,-10 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text15"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,249.33333,345.59896)"><tspan
+         id="tspan15"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0 0 0 0.36400634 0.098001711 0 -0.2240039 0 0 0.084001459 -0.16800293 -0.098001711 0 -0.30800536 -0.098001711 0.3220056"
+         y="0">   t6 : broadcast</tspan></text>
+    <path
+       id="path16"
+       d="m 296,80 h 216 v 36 H 296 Z"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text16"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,482.66667,135.59896)"><tspan
+         id="tspan16"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0 0 -0.18200317 -0.33600587 0 0.3220056 0.30800536 -0.18200317"
+         y="0">processor 2</tspan></text>
+    <path
+       id="path17"
+       d="m 296,168.5 h 144 v 61 H 296 Z"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text17"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,428,244.93229)"><tspan
+         id="tspan17"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 -0.29400513 0.084001459 0 -0.33600587 -0.098001711 -0.3500061"
+         y="0">L1 cache line</tspan></text>
+    <path
+       id="path18"
+       d="M 296,191.5 H 440"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text18"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,410.66667,285.59896)"><tspan
+         id="tspan18"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0 -0.15400268 -0.3500061"
+         y="0">lock</tspan></text>
+    <path
+       id="path19"
+       d="m 349,229.5 v -38"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text19"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,491.33333,275.59896)"><tspan
+         id="tspan19"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0.33600587 0 0 0.36400634 -0.098001711 0.36400634"
+         y="0">Private</tspan><tspan
+         id="tspan20"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="-7.5000005"
+         dx="0 0 0 0.28000489 -0.18200317 0 0 -0.33600587"
+         y="15.000001">Resource</tspan></text>
+    <path
+       id="path20"
+       d="m 368,116.059 c 0,0 0,42.363 0,42.363"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <path
+       id="path21"
+       d="m 371.5,158.422 -3.5,10 -3.5,-10 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text21"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,477.33333,194.93229)"><tspan
+         id="tspan21"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0 0 0 0.36400634 0.098001711 0 -0.2240039 0 0.36400634 0 0.3500061 0 -0.098001711 -0.33600587 0 0 0 0 0 0 0 -0.18200317 -0.33600587"
+         y="0">   t6 : try acquire lock</tspan></text>
+    <path
+       id="path22"
+       d="m 368.012,281 c 0,0.012 -0.024,0.012 -0.024,0 0,-0.012 0.024,-0.012 0.024,0"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <path
+       id="path23"
+       d="m 368,229.535 c 0,22.582 0,49.711 0,51.383"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text23"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,490.66667,345.59896)"><tspan
+         id="tspan23"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0 0 0 -0.28000489 0 0.3500061 0 0 -0.3220056 -0.16800293 0 0 0 -0.37800658"
+         y="0">   Interconnect</tspan></text>
+    <path
+       id="path24"
+       d="m 536,80 h 216 v 36 H 536 Z"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text24"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,802.66667,135.59896)"><tspan
+         id="tspan24"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0 0 -0.18200317 -0.33600587 0 0.3220056 0.30800536 -0.18200317"
+         y="0">processor 3</tspan></text>
+    <path
+       id="path25"
+       d="m 537,168.5 h 144 v 61 H 537 Z"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text25"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,749.33333,244.93229)"><tspan
+         id="tspan25"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 -0.29400513 0.084001459 0 -0.33600587 -0.098001711 -0.3500061"
+         y="0">L1 cache line</tspan></text>
+    <path
+       id="path26"
+       d="M 537,191.5 H 681"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text26"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,732,285.59896)"><tspan
+         id="tspan26"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0 -0.15400268 -0.3500061"
+         y="0">lock</tspan></text>
+    <path
+       id="path27"
+       d="m 590,229.5 v -38"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text27"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,812.66667,275.59896)"><tspan
+         id="tspan27"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0.33600587 0 0 0.36400634 -0.098001711 0.36400634"
+         y="0">Private</tspan><tspan
+         id="tspan28"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="-7.5000005"
+         dx="0 0 0 0.28000489 -0.18200317 0 0 -0.33600587"
+         y="15.000001">Resource</tspan></text>
+    <path
+       id="path28"
+       d="m 609,116.059 c 0,0 0,42.363 0,42.363"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <path
+       id="path29"
+       d="m 612.5,158.422 -3.5,10 -3.5,-10 z"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text29"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,813.33333,194.93229)"><tspan
+         id="tspan29"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#0000ff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 0.37800658 0.084001459 0 -0.2240039 0 0.37800658 0 0.33600587 0 -0.098001711 -0.3500061 0 0 0 0 0 0 0 -0.16800293 -0.33600587"
+         y="0">t6 : try acquire lock</tspan></text>
+    <path
+       id="path30"
+       d="m 609.012,281 c 0,0.012 -0.024,0.012 -0.024,0 0,-0.012 0.024,-0.012 0.024,0"
+       style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <path
+       id="path31"
+       d="m 609,229.535 c 0,22.582 0,49.711 0,51.383"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <path
+       id="path32"
+       d="m 187.133,281 c 5.394,0 175.429,0 180.738,0"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <path
+       id="path33"
+       d="m 368.043,281 c 3.68,0 237.266,0 240.914,0"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <path
+       id="path34"
+       d="m 152,318 h 432 v 36 H 152 Z"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+    <text
+       id="text34"
+       xml:space="preserve"
+       transform="matrix(1.3333333,0,0,1.3333333,428,452.93229)"><tspan
+         id="tspan34"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         x="0"
+         dx="0 -0.29400513 0.084001459 0 -0.33600587 -0.098001711 -0.3500061"
+         y="0">L2 cache line</tspan></text>
+    <path
+       id="path35"
+       d="m 368,281.156 c 0,1.942 0,21.395 0,36.586"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+       transform="scale(1.3333333)" />
+  </g>
+</svg>

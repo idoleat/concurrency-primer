@@ -3,7 +3,7 @@
 Matt Kline and Ching-Chun (Jim) Huang  
 <!--AddTimeHere-->
 
-## Abstract
+# Abstract
 System programmers are acquainted with tools such as mutexes, semaphores, and condition variables.
 However, the question remains: how do these tools work, and how do we write concurrent code in their absence?
 For example, when working in an embedded environment beneath the operating system,
