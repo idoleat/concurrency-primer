@@ -18,3 +18,6 @@ examples/simple_aba_example
 
 # build-flag stamp from examples/Makefile
 examples/.toolchain*
+
+# artifacts builts by mdbook
+book/
