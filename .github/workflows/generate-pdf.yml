@@ -26,7 +26,6 @@ jobs:
           curl --output-dir "mdbook-pdf" --output mdbook-pdf -sSL $url
           chmod +x ./mdbook-pdf/*
           echo `pwd`/mdbook-pdf >> $GITHUB_PATH
-          pip install mdbook-pdf-outline
       - name: Enable pdf ouput
         run: |
           echo "" >> book.toml
@@ -40,9 +39,7 @@ jobs:
           echo "margin-left = 0.1" >> book.toml
           echo "margin-right = 0.1" >> book.toml
           echo "static_site_url = \"https://github.com/idoleat/concurrency-primer\"" >> book.toml
-          echo "generate-document-outline = false" >> book.toml
-          echo "" >> book.toml
-          echo "[output.pdf-outline]" >> book.toml
+          echo "generate-document-outline = true" >> book.toml
       - name: Build Book
         run: |
           # This assumes your book is in the root of your repository.
@@ -50,7 +47,7 @@ jobs:
           mdbook build
       - name: Change pdf named
         run: |
-          mv book/pdf-outline/output.pdf ./concurrency-primer.pdf
+          mv book/pdf/output.pdf ./concurrency-primer.pdf
       - name: Delete old release
         uses: cb80/delrel@latest
         with:
