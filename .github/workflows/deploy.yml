@@ -2,7 +2,7 @@ name: Deploy mdbook
 on:
   push:
     branches:
-      - mdbook
+      - mdbook0818
 
 jobs:
   deploy:
