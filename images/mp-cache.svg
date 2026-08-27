@@ -7,7 +7,10 @@
    width="758.66669"
    height="370.66666"
    viewBox="0 0 758.66669 370.66666"
-   sodipodi:docname="mp-cache.pdf"
+   sodipodi:docname="mp-cache.svg"
+   inkscape:export-filename="mp-cache.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -35,6 +38,18 @@
        bleed="0" />
   </sodipodi:namedview>
   <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="2">
+    <rect
+       style="fill:#ffffff;stroke-width:2.82709"
+       id="rect1"
+       width="758.66669"
+       height="370.66666"
+       x="0"
+       y="0" />
+  </g>
+  <g
      id="g1"
      inkscape:groupmode="layer"
      inkscape:label="1">
@@ -48,7 +63,7 @@
        xml:space="preserve"
        transform="matrix(1.3333333,0,0,1.3333333,64,82.265625)"><tspan
          id="tspan1"
-         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.0002px;font-family:Sans;-inkscape-font-specification:Sans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          x="0"
          dx="0 0.33600587 0 -0.18200317 -0.33600587 0 0.3220056 0.30800536 -0.18200317"
          y="0">Processor 0</tspan></text>
@@ -60,9 +75,10 @@
     <text
        id="text2"
        xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,64,154.26563)"><tspan
+       transform="matrix(1.3333333,0,0,1.3333333,64,154.26563)"
+       style="-inkscape-font-specification:sans;font-family:sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"><tspan
          id="tspan2"
-         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:sans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:sans;font-style:normal;font-stretch:normal"
          x="0"
          dx="0 0.33600587 0 -0.18200317 -0.33600587 0 0.3220056 0.30800536 -0.18200317"
          y="0">Processor 1</tspan></text>
@@ -74,9 +90,10 @@
     <text
        id="text3"
        xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,246.66667,82.265625)"><tspan
+       transform="matrix(1.3333333,0,0,1.3333333,246.66667,82.265625)"
+       style="-inkscape-font-specification:sans;font-family:sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"><tspan
          id="tspan3"
-         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:sans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:sans;font-style:normal;font-stretch:normal"
          x="0"
          dx="0 -0.29400513 0.084001459 0 0 0 0.37800658 -0.098001711 0 -0.21000366 -0.098001711 -0.33600587"
          y="0">L1 Data Cache</tspan></text>
@@ -98,9 +115,10 @@
     <text
        id="text6"
        xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,64,226.26563)"><tspan
+       transform="matrix(1.3333333,0,0,1.3333333,64,226.26563)"
+       style="-inkscape-font-specification:sans;font-family:sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"><tspan
          id="tspan6"
-         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:sans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:sans;font-style:normal;font-stretch:normal"
          x="0"
          dx="0 0.33600587 0 -0.18200317 -0.33600587 0 0.3220056 0.30800536 -0.18200317"
          y="0">Processor 2</tspan></text>
@@ -112,9 +130,10 @@
     <text
        id="text7"
        xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,246.66667,154.26563)"><tspan
+       transform="matrix(1.3333333,0,0,1.3333333,246.66667,154.26563)"
+       style="-inkscape-font-specification:sans;font-family:sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"><tspan
          id="tspan7"
-         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:sans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:sans;font-style:normal;font-stretch:normal"
          x="0"
          dx="0 -0.29400513 0.084001459 0 0 0 0.37800658 -0.098001711 0 -0.21000366 -0.098001711 -0.33600587"
          y="0">L1 Data Cache</tspan></text>
@@ -136,9 +155,10 @@
     <text
        id="text10"
        xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,64,298.26563)"><tspan
+       transform="matrix(1.3333333,0,0,1.3333333,64,298.26563)"
+       style="-inkscape-font-specification:sans;font-family:sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"><tspan
          id="tspan10"
-         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:sans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:sans;font-style:normal;font-stretch:normal"
          x="0"
          dx="0 0.33600587 0 -0.18200317 -0.33600587 0 0.3220056 0.30800536 -0.18200317"
          y="0">Processor 3</tspan></text>
@@ -150,9 +170,10 @@
     <text
        id="text11"
        xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,246.66667,226.26563)"><tspan
+       transform="matrix(1.3333333,0,0,1.3333333,246.66667,226.26563)"
+       style="-inkscape-font-specification:sans;font-family:sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"><tspan
          id="tspan11"
-         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:sans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:sans;font-style:normal;font-stretch:normal"
          x="0"
          dx="0 -0.29400513 0.084001459 0 0 0 0.37800658 -0.098001711 0 -0.21000366 -0.098001711 -0.33600587"
          y="0">L1 Data Cache</tspan></text>
@@ -174,9 +195,10 @@
     <text
        id="text14"
        xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,246.66667,298.26563)"><tspan
+       transform="matrix(1.3333333,0,0,1.3333333,246.66667,298.26563)"
+       style="-inkscape-font-specification:sans;font-family:sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"><tspan
          id="tspan14"
-         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:sans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:sans;font-style:normal;font-stretch:normal"
          x="0"
          dx="0 -0.29400513 0.084001459 0 0 0 0.37800658 -0.098001711 0 -0.21000366 -0.098001711 -0.33600587"
          y="0">L1 Data Cache</tspan></text>
@@ -208,14 +230,15 @@
     <text
        id="text19"
        xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,461.33333,190.93229)"><tspan
+       transform="matrix(1.3333333,0,0,1.3333333,461.33333,190.93229)"
+       style="-inkscape-font-specification:sans;font-family:sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"><tspan
          id="tspan19"
-         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:sans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:sans;font-style:normal;font-stretch:normal"
          x="0"
          dx="0 0 0 0 0 0 -0.37800658 0.37800658 -0.18200317"
          y="0"> Directory</tspan><tspan
          id="tspan20"
-         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:sans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:sans;font-style:normal;font-stretch:normal"
          x="-3.9999957"
          dx="0 0 -0.2240039 -0.16800293 0 0 0 0 0 -0.3500061"
          y="15.000001"> Coherence</tspan></text>
@@ -227,14 +250,15 @@
     <text
        id="text20"
        xml:space="preserve"
-       transform="matrix(1.3333333,0,0,1.3333333,624.66667,190.93229)"><tspan
+       transform="matrix(1.3333333,0,0,1.3333333,624.66667,190.93229)"
+       style="-inkscape-font-specification:sans;font-family:sans;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"><tspan
          id="tspan21"
-         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:sans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:sans;font-style:normal;font-stretch:normal"
          x="0"
          dx="0 0 -0.30800536"
          y="0"> L2</tspan><tspan
          id="tspan22"
-         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:'DejaVu Serif';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-variant:normal;font-weight:normal;font-size:14.0002px;font-family:sans;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;-inkscape-font-specification:sans;font-style:normal;font-stretch:normal"
          x="-29.499998"
          dx="0 0 -0.070001222 0.37800658 -0.098001711 0 -0.21000366 -0.098001711 -0.33600587"
          y="15.000001">Data Cache</tspan></text>
